@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Sekolah</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    /* CARD ANIMATION */
+    .card {
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,.2);
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">SMAN RIKI</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fasilitas">Fasilitas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#berita">Berita</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center text-center" id="home">
+  <div class="container">
+    <h1 class="fw-bold">Selamat Datang di SMAN Riki</h1>
+    <p class="lead mt-3">Membentuk Generasi Cerdas, Berkarakter, dan Berprestasi</p>
+    <a href="#profil" class="btn btn-warning btn-lg mt-4">Lihat Profil</a>
+  </div>
+</section>
+
+<!-- PROFIL -->
+<section class="py-5" id="profil">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Profil Sekolah</h2>
+    <p>
+      SMA Nusantara adalah sekolah unggulan yang berfokus pada pengembangan akademik,
+      karakter, dan keterampilan siswa untuk menghadapi masa depan.
+    </p>
+  </div>
+</section>
+
+<!-- FASILITAS -->
+<section class="py-5 bg-light" id="fasilitas">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Fasilitas</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center p-4">
+          <i class="bi bi-book fs-1 text-primary"></i>
+          <h5 class="mt-3">Perpustakaan</h5>
+          <p>Ruang baca nyaman dan koleksi lengkap</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4">
+          <i class="bi bi-laptop fs-1 text-primary"></i>
+          <h5 class="mt-3">Lab Komputer</h5>
+          <p>Fasilitas IT modern dan up-to-date</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center p-4">
+          <i class="bi bi-trophy fs-1 text-primary"></i>
+          <h5 class="mt-3">Prestasi</h5>
+          <p>Banyak prestasi tingkat daerah & nasional</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BERITA -->
+<section class="py-5" id="berita">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Berita Terbaru</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?school" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Juara Olimpiade</h5>
+            <p class="card-text">Siswa SMAN Riki meraih juara nasional.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?students" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Kegiatan Sekolah</h5>
+            <p class="card-text">Kegiatan belajar aktif dan kreatif.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x300/?education" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Ekstrakurikuler</h5>
+            <p class="card-text">Beragam ekskul untuk minat siswa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="py-5 bg-primary text-white" id="kontak">
+  <div class="container text-center">
+    <h2 class="fw-bold">Kontak Kami</h2>
+    <p>Email: info@smanusantara.sch.id</p>
+    <p>Telp: 0812-3456-7890</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <small>© 2026 SMA Nusantara | All Rights Reserved</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
